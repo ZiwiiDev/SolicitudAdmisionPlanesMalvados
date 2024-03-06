@@ -1,0 +1,80 @@
+<!----------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relación UD05: Sección de solicitud de admisión en el congreso · Oliver</title>
+
+  <!-- Asocio el HTML con el archivo CSS -->
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+
+  <!-- Icono de mostrar la contraseña -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<!----------------------------------------------------------------------------------------------->
+<body>
+  <!-- Oliver Fabián Stetcu Stepanov | 2º DAW -->
+  <form class="formSolicitud" id="formSolicitud" action="" method="get">
+    <div class="form-title">
+      <span>· 39 Escalones ·</span>
+    </div>
+  
+    <div class="title-2">
+      <span> Solicitud de Admisión </span>
+    </div><br>
+  
+    <div class="input-container">
+      <label for="nombre">* Nombre:</label>
+      <input tabindex="1" type="text" name="nombre" id="nombre" placeholder="Inserta nombre" title="Inserta nombre">
+    </div><br>
+  
+    <div class="input-container">
+      <label for="password">* Contraseña:</label>
+      <input tabindex="1" type="password" name="password" id="password" placeholder="Inserta contraseña" title="Inserta contraseña">
+    </div><br>
+  
+    <div class="input-container">
+      <label for="repePassword">* Repetir Contraseña:</label>
+      <input tabindex="1" type="password" name="repePassword" id="repePassword" placeholder="Repite contraseña" title="Repite contraseña">
+      <i class="bx bx-show-alt"></i>
+    </div><br>
+  
+    <section class="bg-stars">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </section>
+  
+    <div class="input-container">
+      <label for="nacionalidad">Nacionalidad:</label>
+      <select name="nacionalidad" id="nacionalidad" tabindex="1">
+        <option selected disabled>Elige nacionalidad</option>
+        <option value="ES">España</option>
+        <option value="NO">Noruega</option>
+        <option value="IS">Islandia</option>
+        <option value="SU">Suecia</option>
+        <option value="LU">Luxemburgo</option>
+      </select>
+    </div><br>
+    
+    <div>
+      <input type="submit" name="enviar" id="enviar" value="Enviar" class="submit"><br>
+      <input type="reset" name="reiniciar" id="reiniciar" value="Reiniciar" class="submit">
+    </div>
+  </form>
+
+  <div id="salida"></div>
+  <div id="visitas-container-solicitud">
+    <p id="contenedorContadorVisitasSolicitud">❤️ ¡Has visitado esta página <span id="contadorVisitasSolicitud">0</span> veces! ❤️</p>
+  </div>
+  <!----------------------------------------------------------------------------------------------->
+  <!-- Asocio el HTML con el archivo JS -->
+  <script src="./js/solicitudAdmision.js"></script>
+  <!----------------------------------------------------------------------------------------------->
+</body>
+<!----------------------------------------------------------------------------------------------->
+</html>
+<!----------------------------------------------------------------------------------------------->

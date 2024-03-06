@@ -1,0 +1,114 @@
+<!----------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relación UD05: Creación de planeas malvados a ofertar · Oliver</title>
+
+  <!-- Asocio el HTML con el archivo CSS -->
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+<!----------------------------------------------------------------------------------------------->
+<body>
+  <!-- Oliver Fabián Stetcu Stepanov | 2º DAW -->
+  <form class="formPlanes" id="formPlanes" action="" method="get">
+    <div class="form-title">
+      <span>· 39 Escalones ·</span>
+    </div>
+
+    <div class="title-2">
+      <span>Ofertar Planes Malvados</span>
+    </div><br>
+
+    <div class="input-container">
+      <label for="nombrePlan">* Nombre del Plan:</label>
+      <input tabindex="1" type="text" name="nombrePlan" id="nombrePlan" pattern="^[A-Za-zñÑ]{1,}$" minlength="1" placeholder="Inserta nombre del plan" title="Inserta nombre del plan" required>
+    </div><br>
+
+    <div class="input-container">
+      <label for="codPlan">* Código del Plan:</label>
+      <input tabindex="1" type="text" name="codPlan" id="codPlan" pattern="^[A-Za-z]\d{3,7}$" minlength="1" maxlength="8" placeholder="X1234567" title="Inserta código del plan" required>
+    </div><br>
+
+    <div>
+      <label for="paises">País:</label>
+      <input list="paisesPlan" id="paises" name="paises" />
+
+      <!-- De esta forma aparecen las últimas búsquedas del usuario -->
+      <datalist id="paisesPlan">
+        <option value="ES">España</option>
+        <option value="NO">Noruega</option>
+        <option value="IS">Islandia</option>
+        <option value="SU">Suecia</option>
+        <option value="LU">Luxemburgo</option>
+      </datalist>
+
+      <!-- OTRA FORMA (aparece más feo)
+      <datalist id="paisesPlan">
+        <option value="España"></option>
+        <option value="Noruega"></option>
+        <option value="Islandia"></option>
+        <option value="Suecia"></option>
+        <option value="Luxemburgo"></option>
+      </datalist>
+      -->
+    </div><br><br>
+
+    <section class="bg-stars">
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
+    </section>
+
+    <div>
+      <label for="tipoPlan">* Tipo de Plan:</label><br><br>
+      
+      <input type="radio" id="operacionesCampo" name="tipoPlan" value="Operaciones en Campo" required>
+      <label for="operacionesCampo">Operaciones en campo</label><br><br>
+
+      <input type="radio" id="recursosFinancieros" name="tipoPlan" value="Recursos Financieros">
+      <label for="recursosFinancieros">Manejo de recursos financieros</label><br><br>
+
+      <input type="radio" id="desarrolloTecn" name="tipoPlan" value="Desarrollo de Tecnología">
+      <label for="desarrolloTecn">Desarrollo de tecnología</label><br><br>
+
+      <input type="radio" id="luchasPoder" name="tipoPlan" value="Poder Interno">
+      <label for="luchasPoder">Luchas de poder interno</label><br><br>
+
+      <input type="radio" id="rescate" name="tipoPlan" value="Operaciones de Rescate">
+      <label for="rescate">Operaciones de rescate</label><br><br>
+
+      <input type="radio" id="cifradoDescifrado" name="tipoPlan" value="Cifrado y Descifrado">
+      <label for="cifradoDescifrado">Cifrado y descifrado</label><br><br>
+
+      <input type="radio" id="operacionesEncubiertas" name="tipoPlan" value="Operaciones Encubiertas">
+      <label for="operacionesEncubiertas">Operaciones encubiertas</label><br><br>
+
+      <input type="radio" id="contrainteligencia" name="tipoPlan" value="Contrainteligencia">
+      <label for="contrainteligencia">Contrainteligencia</label><br><br>
+
+      <input type="radio" id="desinformacion" name="tipoPlan" value="Desinformación Estratégica">
+      <label for="desinformacion">Desinformación Estratégica</label>
+    </div><br><br>
+
+    <div>
+      <input type="submit" name="enviarPlan" id="enviarPlan" value="Enviar" class="submit"><br>
+      <input type="reset" name="reiniciarPlan" id="reiniciarPlan" value="Borrar" class="submit">
+    </div>
+  </form>
+
+  <div id="salidaPlan"></div>
+  <div id="visitas-container-planes">
+    <p id="contenedorContadorVisitasPlanes">❤️ ¡Has visitado esta página <span id="contadorVisitasPlanes">0</span> veces! ❤️</p>
+  </div>
+  <!----------------------------------------------------------------------------------------------->
+  <!-- Asocio el HTML con el archivo JS -->
+  <script src="./js/planesMalvados.js"></script>
+  <!----------------------------------------------------------------------------------------------->
+</body>
+<!----------------------------------------------------------------------------------------------->
+</html>
+<!----------------------------------------------------------------------------------------------->
